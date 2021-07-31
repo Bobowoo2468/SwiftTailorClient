@@ -7,7 +7,7 @@ export default function Filter(props) {
         props.setDropGender (!props.dropGender);
     }
 
-    useEffect(() => {
+    useEffect((props) => {
         let genders = [
             {id: 1, gender: "Male"},
             {id: 2, gender: "Female"},            
