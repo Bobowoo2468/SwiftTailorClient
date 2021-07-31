@@ -1,0 +1,13 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+.btn {
+  width: 30%;
+  height: 8%;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .btn {
+    width: 150px;
+  }
+}

@@ -1,0 +1,100 @@
+.redirect {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding-top: 15px;
+}
+
+.redirect .caption {
+  font-size: 2em;
+  color: #5e646d;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.redirect .type-name {
+  font-size: 4.5em;
+  color: #282c35;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.redirect .ratios {
+  font-size: 1.5em;
+  color: #5e646d;
+}
+
+.redirect .info {
+  font-size: 1.5em;
+}
+
+.redirect .info.oneliner {
+  font-size: 2em;
+  margin-top: 50px;
+  color: #51555f;
+  font-weight: 600;
+}
+
+.redirect .info.characteristic {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #51555f;
+}
+
+.redirect .separator {
+  height: 2px;
+  background-color: lightgrey;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.redirect .info.advice {
+  font-size: 1.5em;
+  margin-top: 50px;
+  color: #51555f;
+}
+
+.redirect ul {
+  text-align: left;
+  list-style-position: inside;
+  margin-top: 50px;
+}
+
+.redirect li {
+  padding-bottom: 20px;
+}
+
+.redirect .linkstyle {
+  text-align: right;
+  height: 70px;
+  padding-right: 50px;
+}
+
+.redirect .button {
+  text-align: right;
+  padding: 4px 15px 2px;
+  border: none;
+  border-radius: 23px;
+}
+
+.redirect .button.linkb {
+  background-color: rgb(109, 108, 110);
+  color: white;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.redirect .button.linkb:hover {
+  background-color: rgb(64, 63, 65);
+}
+
+.redirect .button.shopb {
+  background-color: white;
+  color: rgb(161, 161, 161);
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+.redirect .button.shopb:hover {
+  border: 2px solid #ccc;
+}

@@ -1,0 +1,120 @@
+.mn.male {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mn.male .type-name h1 {
+  font-weight: bold;
+}
+
+.mn.male .type-name h1 span {
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mn.male .type-intro {
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+.mn.male .separator {
+  height: 2px;
+  background-color: rgb(228, 227, 227);
+  margin: 70px 50px 70px 50px;
+}
+
+.mn.male .golden-rules-intro {
+  font-weight: bold;
+  font-size: 1.7em;
+  padding: 0 0 60px 0;
+}
+
+.mn.male .golden-rules {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 4vw 0 4vw;
+}
+
+.mn.male .golden-rules .rule {
+  background-color: rgb(245, 245, 245);
+  width: 260px;
+  padding: 30px 10px 30px 10px;
+}
+
+.mn.male .golden-rules .rule h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.rule-desc {
+  padding-top: 30px;
+}
+
+.specific-desc .overview h1 {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.specific-desc .overview span {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.specific-desc h3 {
+  font-size: 1.3em;
+  padding-bottom: 50px;
+}
+
+.specific-desc h4 {
+  font-size: 1.1em;
+}
+
+.specific-desc img {
+  width: 200px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.specific-desc h1 {
+  font-weight: bold;
+  font-size: 1.7em;
+  padding-bottom: 50px;
+}
+
+.specific-desc .tops {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.specific-desc .tops .top {
+  width: 20%;
+}
+
+.specific-desc .bottoms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.specific-desc .bottoms .bottom {
+  width: 20%;
+}
+
+.specific-desc .accessories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.specific-desc .accessories .accessory {
+  width: 20%;
+}

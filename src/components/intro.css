@@ -1,0 +1,118 @@
+.intro {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.intro .intro-liner {
+  color: white;
+  text-align: center;
+  padding: 14.5% 0 14.5% 0;
+  transition: all 0.5s ease-out;
+}
+
+.intro .intro-liner h1 {
+  font-size: 80px;
+  transition: all 0.5s ease-out;
+  animation-name: colorChange;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.intro .intro-liner h2 {
+  font-size: 80px;
+  padding-top: 50px;
+  transition: all 0.5s ease-out;
+  animation-name: colorChange;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  25% {
+    color: azure;
+  }
+  50% {
+    color: cornflowerblue;
+  }
+  100% {
+    color: powderblue;
+  }
+}
+
+.intro .welcomeContainer {
+  padding-top: 14%;
+  padding-bottom: 8%;
+}
+
+.intro .welcomeMessage {
+  background-color: rgb(207, 233, 250);
+  opacity: 0.95;
+  margin: 0 15% 0 15%;
+  padding: 7%;
+  border-radius: 20px;
+}
+
+.intro .welcomeMessage p {
+  font-size: 1.2em;
+  padding: 20px;
+  color: #212529;
+}
+
+.welcomeMessage .welcomeTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.welcomeMessage .welcomeTitle span {
+  font-weight: bold;
+  color: #008080;
+}
+
+.home-buttons .separator {
+  height: 20px;
+}
+
+.home-buttons .home-button {
+  margin: 15px;
+}
+
+@media screen and (max-width: 760px) {
+  .home-buttons .separator {
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .intro .intro-liner {
+    color: white;
+    text-align: center;
+    padding: 200px 0 250px 0;
+    transition: all 0.5s ease-out;
+  }
+
+  .intro .intro-liner h1 {
+    font-size: 70px;
+    transition: all 0.5s ease-out;
+    animation-name: colorChange;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  .intro .intro-liner h2 {
+    font-size: 70px;
+    padding-top: 50px;
+    transition: all 0.5s ease-out;
+    animation-name: colorChange;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+}

@@ -1,0 +1,69 @@
+.upload {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.upload > input {
+  transform: translateX(20%);
+}
+
+.upload > h1 {
+  font-size: 30px;
+}
+
+.image-received {
+  position: absolute;
+  right: 10%;
+  font-size: 0;
+}
+
+.no-image {
+  position: absolute;
+  background-color: white;
+  right: 10%;
+  opacity: 30%;
+  width: 30vw;
+  height: 43vw;
+  outline-style: dashed;
+  outline-color: black;
+  font-size: 2.2vw;
+  text-align: center;
+  padding: 20vw 0;
+}
+
+.loader {
+  position: absolute;
+  font-size: 0;
+  right: 20%;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader > img {
+  display: none;
+}

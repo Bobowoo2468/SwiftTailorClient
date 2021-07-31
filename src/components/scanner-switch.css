@@ -1,0 +1,69 @@
+.switch-container {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 34px;
+}
+
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(228, 157, 212);
+  transition: 0.8s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Female";
+  text-align: center;
+  height: 26px;
+
+  width: 48%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.8s;
+}
+
+#man.slider {
+  background-color: #808892;
+}
+
+#man.slider:before {
+  transform: translateX(98.5%);
+  content: "Male";
+}
+
+/* changes label area */
+.slider.rounded {
+  border-radius: 50px;
+}
+
+.slider.rounded:before {
+  border-radius: 20px;
+}
+
+.bg-img {
+  object-fit: cover;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}

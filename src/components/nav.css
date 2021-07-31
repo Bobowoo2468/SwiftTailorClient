@@ -1,0 +1,129 @@
+.navibar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 2;
+  border-bottom: solid lightgrey 1px;
+  box-shadow: 0 1px 4px 0 #c0c3cc;
+}
+
+.navibar-logo {
+  display: block;
+  width: 250px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 27px;
+  justify-self: auto;
+  margin-left: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.navibar-logo:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: dimgray;
+  transition: all 0.2s ease-out;
+}
+
+.navi-links {
+  color: black;
+  text-decoration: bold;
+  font-size: 12px;
+  padding: 1.5rem;
+}
+
+.navi-links:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  transition: all 0.4s ease-out;
+  border-radius: 5px;
+}
+
+.navi-menu {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+}
+
+.fa-cut {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.fa-times {
+  color: black;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navibar {
+    position: fixed;
+    z-index: 2;
+  }
+
+  .navi-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s ease;
+    padding: 1rem;
+  }
+
+  .navi-menu.active {
+    background: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    width: 100%;
+    padding: 1rem;
+    z-index: 2;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .navi-links {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navi-links:hover {
+    background-color: black;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.4s ease-out;
+  }
+
+  .navibar-logo {
+    position: absolute;
+    left: 0%;
+  }
+}
