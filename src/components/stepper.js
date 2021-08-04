@@ -86,7 +86,7 @@ export default function ScanStepper(props) {
     axios.post('http://localhost:9000/paramsAPI', {data});
 
     async function asyncGet(){
-      const res = await (axios.get(`http://localhost:9000/imgAPI`));
+      const res = await (axios.get(`http://localhost:9000/processAPI`));
       props.setBodyshape(res.data.bodyshape);
       props.setSmeasure (res.data.shoulder);
       props.setWmeasure(res.data.waist);
@@ -95,6 +95,7 @@ export default function ScanStepper(props) {
       props.setwhratio(res.data.whratio);
       props.setShapeloading(false);
     }
+
     asyncGet();
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
 }
