@@ -13,6 +13,10 @@ export default function Shop(){
     const [gender , setGender] = useState([]);
     const [dropdown, setDropdown] = useState(false);
     const [dropGender, setDropGender] = useState(false);
+    const [dropBodyshape, setDropBodyshape] = useState(false);
+    const [dropType, setDropType] = useState(false);
+    const [dropPrice, setDropPrice] = useState(false);
+    const [dropStyle, setDropStyle] = useState(false);
 
     useEffect(()=>{
         axios.get('http://localhost:9000/databaseAPI').then((response) => {
@@ -38,12 +42,20 @@ export default function Shop(){
                 styles = {styles}
                 gender = {gender}
                 dropGender = {dropGender}
+                dropBodyshape = {dropBodyshape}
+                dropPrice = {dropPrice}
+                dropType = {dropType}
+                dropStyle = {dropStyle}
                 setBodyshape = {setBodyshape}  
                 setTypes = {setTypes}
                 setPrices = {setPrices}  
                 setStyles = {setStyles} 
                 setGender = {setGender} 
                 setDropGender = {setDropGender}
+                setDropBodyshape = {setDropBodyshape}
+                setDropType = {setDropType}
+                setDropPrice = {setDropPrice}
+                setDropStyle = {setDropStyle}
             />
             </>
         </div>

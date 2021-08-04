@@ -7,6 +7,22 @@ export default function Filter(props) {
         props.setDropGender (!props.dropGender);
     }
 
+    const toggleBodyshapeFilter = () => {
+        props.setDropBodyshape (!props.dropBodyshape);
+    }
+
+    const toggleTypeFilter = () => {
+        props.setDropType (!props.dropType);
+    }
+
+    const togglePriceFilter = () => {
+        props.setDropPrice (!props.dropPrice);
+    }
+
+    const toggleStyleFilter = () => {
+        props.setDropStyle (!props.dropStyle);
+    }
+
     useEffect(() => {
         let genders = [
             {id: 1, gender: "Male"},
@@ -136,7 +152,11 @@ export default function Filter(props) {
                 </div>
             </div>
             <div className = "wrapper">
-                <h5>Bodyshape</h5>
+                <inlinespan>
+                    <h5>Bodyshape</h5>
+                    <i className = {props.dropBodyshape ? 'fas fa-minus' : 'fas fa-plus'} onClick = {toggleBodyshapeFilter}/> 
+                </inlinespan>
+                <div className = {props.dropBodyshape ? "show bodyshape-filter" : 'hide bodyshape-filter'}>
                 {props.bodyshape.map((d) => {
                     if ((props.gender[0].display === true & d.id <= 5) || (props.gender[1].display === true & d.id > 5)) {
                     return(
@@ -161,10 +181,15 @@ export default function Filter(props) {
                     )
                     }
                 })}
+                </div>
             </div>
 
             <div className = "wrapper">
-                <h5>Type</h5>
+                <inlinespan>
+                    <h5>Types</h5>
+                    <i className = {props.dropType ? 'fas fa-minus' : 'fas fa-plus'} onClick = {toggleTypeFilter}/> 
+                </inlinespan>
+                <div className = {props.dropType ? "show type-filter" : 'hide type-filter'}>                
                 {props.types.map((d) => {
                         return(
                         <>
@@ -188,8 +213,13 @@ export default function Filter(props) {
                         )
                 })}         
             </div>
+            </div>
             <div className = "wrapper">
-                <h5>Price</h5>
+                <inlinespan>
+                    <h5>Price</h5>
+                    <i className = {props.dropPrice ? 'fas fa-minus' : 'fas fa-plus'} onClick = {togglePriceFilter}/> 
+                </inlinespan>
+                <div className = {props.dropPrice ? "show price-filter" : 'hide price-filter'}>  
                 {props.prices.map((d) => {
                         return(
                         <>
@@ -213,8 +243,13 @@ export default function Filter(props) {
                         )
                     })}                      
             </div>
+            </div>
             <div className = "wrapper">
-                <h5>Style</h5>
+                <inlinespan>
+                    <h5>Style</h5>
+                    <i className = {props.dropStyle ? 'fas fa-minus' : 'fas fa-plus'} onClick = {toggleStyleFilter}/> 
+                </inlinespan>
+                <div className = {props.dropStyle ? "show style-filter" : 'hide style-filter'}>  
                 {props.styles.map((d) => {
                         return(
                         <>
@@ -237,6 +272,7 @@ export default function Filter(props) {
                         </>
                         )
                 })} 
+            </div>
             </div>
         </div>
     </>
