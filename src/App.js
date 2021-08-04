@@ -16,7 +16,6 @@ import MaleRectangle from './components/bodyshapes/male-rectangle';
 import MaleTrapezoid from './components/bodyshapes/male-trapezoid';
 import MaleInvertedTriangle from './components/bodyshapes/male-inverted-triangle';
 import Shop from './components/shop';
-// import Aboutus from './components/aboutus';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -40,7 +39,6 @@ function App() {
         <Route path = '/body-shapes/male-trapezoid' exact> <MaleTrapezoid/> </Route> 
         <Route path = '/body-shapes/male-inverted-triangle' exact> <MaleInvertedTriangle/> </Route> 
         <Route path = '/shop' exact> <Shop/> </Route>
-        {/* <Route path = '/about-us' exact> <Aboutus/> </Route> */}
       </Switch>
     </Router>
     </>

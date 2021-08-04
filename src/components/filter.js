@@ -7,17 +7,11 @@ export default function Filter(props) {
         props.setDropGender (!props.dropGender);
     }
 
-    const setGender = props.setGender;
-    const setBodyshape = props.setBodyshape;
-    const setTypes = props.setTypes;
-    const setStyles = props.setStyles;
-    const setPrices = props.setPrices;
-
     useEffect(() => {
         let genders = [
             {id: 1, gender: "Male"},
             {id: 2, gender: "Female"},            
-        ];
+        ];  
 
         let bodyshape = [
             {id: 1, body: "Triangle"},
@@ -51,7 +45,7 @@ export default function Filter(props) {
             {id: 3, style: "Formal"}
         ];
 
-        setGender(
+        props.setGender(
             genders.map(d => {
                 return {
                     select: true,
@@ -62,7 +56,7 @@ export default function Filter(props) {
             })  
         );  
 
-        setBodyshape(
+        props.setBodyshape(
             bodyshape.map(d => {
                 return {
                     select: true,
@@ -73,7 +67,7 @@ export default function Filter(props) {
             })  
         );  
         
-        setTypes(
+        props.setTypes(
             types.map(d => {
                 return {
                     select: true,
@@ -84,7 +78,7 @@ export default function Filter(props) {
             })  
         );
 
-        setPrices(
+        props.setPrices(
             prices.map(d => {
                 return {
                     select: true,
@@ -95,7 +89,7 @@ export default function Filter(props) {
             })  
         );
 
-        setStyles(
+        props.setStyles(
             styles.map(d => {
                 return {
                     select: true,
@@ -106,7 +100,7 @@ export default function Filter(props) {
             })  
         );
         
-    },)
+    }, [])
 
     return(
     <>

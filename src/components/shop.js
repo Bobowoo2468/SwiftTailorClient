@@ -17,7 +17,7 @@ export default function Shop(){
     useEffect(()=>{
         axios.get('http://localhost:9000/databaseAPI').then((response) => {
             setFashionList(response.data)
-        }); 
+        });
     }, [])
 
     const toggleDropdown = () => {
