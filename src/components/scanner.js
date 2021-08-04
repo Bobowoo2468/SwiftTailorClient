@@ -23,7 +23,7 @@ export default function Scanner() {
         <>
         {shapeloading ? <Loading/> : null}
         <div className = {shapeloading ? "transparent" : null}>
-        <img className = 'bg-img' src = {toggle ? "male-oval-henley.webp": "womenbg.jpg"} alt = "background"/>
+        <img className = 'bg-img' src = {toggle ? "menbg.jpg": "womenbg.jpg"} alt = "background"/>
         <div className = 'contain'>
             <p className = {bodyshape === -1 ? 'welcomeText' : 'hidewelcomeText'}>
                 <h1>Body Shape Scanner</h1>
