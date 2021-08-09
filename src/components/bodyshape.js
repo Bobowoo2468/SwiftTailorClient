@@ -123,55 +123,21 @@ export default function Bodyshape(){
                         <div className = "shadowimg"><img src = "inverted-triangle.png" alt = ""/></div>
                         <h4>Inverted Triangle</h4>
                         <h5>Broader shoulders and a larger bust, narrower hips and waist</h5>
-                        {/* <div className = "dropdown-content" id = "female-invert">
-                            <img src = "female-inverted-triangle-1.jpg" style = {{height:300}} alt = ""/>
-                            <div className = "desc">Add curves to the hips and bottom while creating a more defined waist, and de-emphasising the upper body.</div>
-                            <Link to = "/body-shapes/female-inverted-triangle" className = "link">
-                                <img src = "next icon.png" alt = ""/>
-                                <p>Find out more!</p>
-                            </Link>
-                        </div> */}
                     </div>
                     <div className = "type" onClick = {() => wrapper(8)}>
                         <div className = "shadowimg"><img src = "apple.png" alt = ""/></div>
                         <h4>Apple</h4>
                         <h5>Slightly narrower shoulders and hips with a large bust and waist</h5>
-                        {/* <div className = "dropdown-content" id = "female-apple">
-                            <img src = "female-apple-1.jpg" style = {{height:300}} alt = ""/>
-                            <img src = "female-apple-2.jpg" style = {{height:300}} alt = ""/>
-                            <div className = "desc">De-emphasise the midsection and to create a more defined waist.</div>
-                            <Link to = "/body-shapes/female-apple" className = "link">
-                                <img src = "next icon.png" alt = ""/>
-                                <p>Find out more!</p>
-                            </Link>
-                        </div> */}
                     </div>
                     <div className = "type" onClick = {() => wrapper(9)}>
                         <div className = "shadowimg"><img src = "rectangle.png" alt = ""/></div>
                         <h4>Rectangle</h4>
                         <h5>Fairly uniform measurements, more straight than curvy</h5>
-                        {/* <div className = "dropdown-content" id = "female-rectangle">
-                            <img src = "female-rectangle-1.png" style = {{height:300}} alt = ""/>
-                            <div className = "desc">Focus of this body shape should be on defining the waist by breaking up the rectangle.</div>
-                            <Link to = "/body-shapes/female-rectangle" className = "link">
-                                <img src = "next icon.png" alt = ""/>
-                                <p>Find out more!</p>
-                            </Link>
-                        </div> */}
                     </div>
                     <div className = "type" onClick = {() => wrapper(10)}>
                         <div className = "shadowimg"><img src = "Hourglass.png" alt = ""/> </div>
                         <h4>Hourglass</h4>
                         <h5>Shapely bust, defined waist, curves in the right places</h5>
-                        {/* <div className = "dropdown-content" id = "female-hourglass">
-                            <img src = "female-hourglass-1.jpg" style = {{height:300}} alt = ""/>
-                            <img src = "female-hourglass-2.jpg" style = {{height:300}} alt = ""/>
-                            <div className = "desc">Follow its natural silhouette by proportionally dressing the top and bottom of the body while accentuating the waist.</div>
-                            <Link to = "/body-shapes/female-hourglass" className = "link">
-                                <img src = "next icon.png" alt = ""/>
-                                <p>Find out more!</p>
-                            </Link>
-                        </div> */}
                     </div>
                 </div>
                 {(toggle && toggleType > 5)? ``: <div className = "emptydiv"></div>}

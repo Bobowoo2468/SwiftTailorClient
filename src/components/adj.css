@@ -1,20 +1,10 @@
-/* html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-} */
-
 .slider-wrapper {
-  /* display: inline-block; */
   width: 120px;
   height: 0px;
-  /* padding: 20px; */
   position: absolute;
   pointer-events: none;
 
-  /* top: 830px; */
   top: 400px;
-  /* left: 64.4%; */
   left: 25.1%;
 }
 
@@ -56,12 +46,8 @@ body {
 
 .imagewrapper {
   position: absolute;
-  /* right: 10%; */
   left: 65%;
-  /* top: 330px; */
   top: 400px;
-  /* padding-bottom: 5vw; */
-  /* border: 2px solid black; */
   padding-bottom: 2px;
 }
 
@@ -89,7 +75,6 @@ body {
 .nilwrapper {
   position: absolute;
   right: 10%;
-  /* top: 330px; */
   top: 400px;
   width: 30vw;
   height: 30vw;
@@ -111,7 +96,6 @@ body {
 }
 
 .shoulderline {
-  /* position: relative; */
   height: 2px;
   background: rgb(135, 151, 243);
   position: absolute;
@@ -119,7 +103,6 @@ body {
 }
 
 .waistline {
-  /* position: relative; */
   height: 2px;
   background: rgb(160, 240, 135);
   position: absolute;
@@ -127,7 +110,6 @@ body {
 }
 
 .hipsline {
-  /* position: relative; */
   height: 2px;
   background: rgb(236, 95, 95);
   position: absolute;
@@ -139,7 +121,6 @@ body {
   left: 40%;
   width: 215px;
   height: 75px;
-  /* border: black 2px solid; */
   text-align: center;
   line-height: 20px;
   border-radius: 10px;
@@ -174,57 +155,3 @@ body {
   right: 10%;
   color: rgb(56, 56, 56);
 }
-
-/* @media screen and (max-width: 960px) {
-  .nilwrapper {
-    position: absolute;
-    left: 10%;
-    top: 600px;
-    width: 300px;
-    height: 300px;
-    padding-bottom: 50px;
-    outline-style: dashed;
-    outline-color: black;
-    background-color: white;
-    opacity: 30%;
-    font-size: 24px;
-    text-align: center;
-    padding: 100px 0;
-    transition: 2ms ease-out;
-  }
-
-  .nilwrapper > div {
-    display: none;
-  }
-
-  .imagewrapper {
-    position: absolute;
-    right: 20%;
-    top: 600px;
-  }
-
-  .imagewrapper > p {
-    font-size: 0;
-  }
-
-  .shoulderline {
-    position: relative;
-    height: 2px;
-    background: black;
-  }
-
-  .waistline {
-    position: relative;
-    height: 2px;
-    background: black;
-  }
-
-  .hipsline {
-    position: relative;
-    height: 2px;
-    background: black;
-  }
-  .emptyDiv {
-    height: 650px;
-  }
-} */

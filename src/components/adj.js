@@ -33,15 +33,8 @@ export default function Adj (props){
                 value = {props.shoulder}
                 onChange = {e => props.setShoulder(e.target.value)}
             />
-            {/* <p style = {{textAlign: "right"}}>Shoulders</p>       */}
         </label> 
-        {/* <input 
-        type = "number"
-        min = "0"
-        max = "500"
-        value = {props.shoulder}
-        onChange = {e => props.setShoulder(e.target.value)}
-        />   */}
+
         
         <div className = "slider-wrapper waist">
             <input 
@@ -53,15 +46,7 @@ export default function Adj (props){
                 value = {props.waist}
                 onChange = {e => props.setWaist(e.target.value)}
             />
-            {/* <p style = {{textAlign: "right"}}>Waist</p>            */}
         </div> 
-        {/* <input 
-        type = "number"
-        min = "0"
-        max = "500"
-        value = {props.waist}
-        onChange = {e => props.setWaist(e.target.value)}
-        />   */}
 
         <div className = "slider-wrapper hip">
             <input 
@@ -73,15 +58,7 @@ export default function Adj (props){
                 value = {props.hips}
                 onChange = {e => props.setHips(e.target.value)}
             />
-            {/* <p style = {{textAlign: "right"}}>Hips</p>            */}
         </div> 
-        {/* <input 
-            type = "number"
-            min = "0"
-            max = "500"
-            value = {props.hips}
-            onChange = {e => props.setHips(e.target.value)}
-        />   */}
         </div>
          : null }
 
