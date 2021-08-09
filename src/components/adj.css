@@ -3,20 +3,19 @@
   height: 0px;
   position: absolute;
   pointer-events: none;
-
-  top: 400px;
-  left: 25.1%;
+  top: 900px;
+  left: 64.9%;
 }
 
 .slider-wrapper input {
   width: 500px;
-  height: 4px;
+  height: 5px;
   top: 0px;
   transform: rotate(270deg);
   -webkit-appearance: none;
   background-color: transparent;
   pointer-events: none;
-  transform-origin: bottom right;
+  transform-origin: bottom left;
 }
 
 .slider-wrapper input::-webkit-slider-thumb {
@@ -46,9 +45,9 @@
 
 .imagewrapper {
   position: absolute;
-  left: 65%;
   top: 400px;
   padding-bottom: 2px;
+  left: 65%;
 }
 
 .imagewrapper > p {
@@ -121,6 +120,7 @@
   left: 40%;
   width: 215px;
   height: 75px;
+  /* border: black 2px solid; */
   text-align: center;
   line-height: 20px;
   border-radius: 10px;

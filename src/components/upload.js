@@ -33,6 +33,7 @@ export default function Upload(props){
             <input type = "file"
             name = "file"
             placeholder = "Upload an image"
+            accept = ".png, .jpg, .jpeg, .webp"
             onChange = {uploadImage}
             />
         </div>  

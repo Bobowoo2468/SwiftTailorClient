@@ -1,0 +1,81 @@
+.update-db {
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.update-db h1 {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.update-db h4 {
+  margin-left: 20px;
+}
+
+.update-db p {
+  font-size: 1.2em;
+}
+
+.update-db .input-db {
+  margin-top: 40px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 15% 35% 15% 35%;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 5%;
+}
+
+.update-db .weblink {
+  grid-column: 2 / span 3;
+}
+
+.update-db input {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.update-db input[type="button"] {
+  width: 150px;
+}
+
+.update-db select {
+  border-radius: 3px;
+  width: 150px;
+  border: 2px solid whitesmoke;
+}
+
+.update-db .link {
+  width: 500px;
+}
+
+.input-db .original {
+  border: 2px solid whitesmoke;
+}
+
+.input-db .warning {
+  border: 2px solid rgb(224, 80, 80);
+}
+
+.input-db input.filled {
+  border: 2px solid rgb(178, 238, 160);
+}
+
+.submit {
+  margin-top: 20px;
+}
+
+.update-db .input-db .select-grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto auto;
+}
+
+.update-db input:focus {
+  outline: none;
+  border: 2px solid rgb(113, 232, 248);
+}
+
+.update-db select:focus {
+  outline: none;
+  border: 2px solid rgb(113, 232, 248);
+}
